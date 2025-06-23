@@ -1,6 +1,8 @@
 services:
   jupyterlab:
     build: .
+    image: jupyterlab-test-img
+    container_name: jupyterlab-test
     volumes:
       - ./work:/work
     ports:
